@@ -1,5 +1,21 @@
 // Function for Problem-02
 
+function  onlyCharacter2( str ){
+
+    if (typeof str !== "string"){
+        return "Invalid"
+    }
+
+    let removeSpaces = str.split(' ')
+    let onlyCharacter = removeSpaces.join('').toUpperCase()
+    
+    return onlyCharacter
+    
+
+}
+
+// Another way to solve this
+
 function  onlyCharacter( str ) {
 
     if (typeof str !== "string"){
