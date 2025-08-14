@@ -1,5 +1,3 @@
-// Function for Problem-01
-
 function totalFine( fare ) {
 
     if (typeof fare !== "number" || fare < 1){
@@ -12,7 +10,6 @@ function totalFine( fare ) {
 }
 
 
-// Function for Problem-02
 
 function  onlyCharacter( str ){
 
@@ -29,7 +26,6 @@ function  onlyCharacter( str ){
 }
 
 
-// Function for Problem-03
 
 function bestTeam(player1, player2) {
 
@@ -54,13 +50,12 @@ function bestTeam(player1, player2) {
 }
 
 
-// Function for Problem-04
 
 function  isSame(arr1 , arr2 ) {
 
     if (Array.isArray(arr1) !== true || Array.isArray(arr2)!== true){
         return "Invalid"
-    }
+    };
 
     if (arr1.length !== arr2.length){
 
@@ -76,24 +71,15 @@ function  isSame(arr1 , arr2 ) {
 
     return true
 
-
-
 }
 
 
-// Function for Problem-05
 
 function resultReport(marks) {
 
     if (Array.isArray(marks) !== true) {
         return "Invalid"
-    } else if (marks.length === 0) {
-        return {
-            finalScore: 0,
-            pass: 0,
-            fail: 0
-        }
-    }
+    } 
 
     let total = 0;
     let passedSubs = 0;
@@ -110,13 +96,15 @@ function resultReport(marks) {
 
     }
 
-    let averageMark = Math.round(total / marks.length)
+    let average = 0;
 
-    const resultReport = {
-        finalScore: averageMark,
+    average = marks.length>0 ? Math.round(total/marks.length): 0;
+
+    return {
+        finalScore: average,
         pass: passedSubs,
         fail: failedSubs
     }
 
-    return resultReport
+    
 }

@@ -11,4 +11,4 @@ function totalFine( fare ) {
     
 }
 
-console.log(totalFine(200));
+console.log(totalFine("Gorib tai ticket katinai"));

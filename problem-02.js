@@ -1,6 +1,6 @@
 // Function for Problem-02
 
-function  onlyCharacter2( str ){
+function  onlyCharacter( str ){
 
     if (typeof str !== "string"){
         return "Invalid"
@@ -14,9 +14,12 @@ function  onlyCharacter2( str ){
 
 }
 
+console.log(onlyCharacter(true));
+
+
 // Another way to solve this
 
-function  onlyCharacter( str ) {
+function  onlyCharacter2( str ) {
 
     if (typeof str !== "string"){
         return "Invalid"

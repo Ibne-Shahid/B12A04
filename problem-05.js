@@ -4,13 +4,7 @@ function resultReport(marks) {
 
     if (Array.isArray(marks) !== true) {
         return "Invalid"
-    } else if (marks.length === 0) {
-        return {
-            finalScore: 0,
-            pass: 0,
-            fail: 0
-        }
-    }
+    } 
 
     let total = 0;
     let passedSubs = 0;
@@ -27,13 +21,17 @@ function resultReport(marks) {
 
     }
 
-    let averageMark = Math.round(total / marks.length)
+    let average = 0;
 
-    const resultReport = {
-        finalScore: averageMark,
+    average = marks.length>0 ? Math.round(total/marks.length): 0;
+
+    return {
+        finalScore: average,
         pass: passedSubs,
         fail: failedSubs
     }
 
-    return resultReport
+    
 }
+
+console.log(resultReport(100));

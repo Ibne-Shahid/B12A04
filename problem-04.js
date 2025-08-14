@@ -4,7 +4,7 @@ function  isSame(arr1 , arr2 ) {
 
     if (Array.isArray(arr1) !== true || Array.isArray(arr2)!== true){
         return "Invalid"
-    }
+    };
 
     if (arr1.length !== arr2.length){
 
@@ -20,6 +20,6 @@ function  isSame(arr1 , arr2 ) {
 
     return true
 
-
-
 }
+
+console.log(isSame({data: [2 , 5 , 6] } , [2 , 5 , 6]));

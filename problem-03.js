@@ -21,3 +21,6 @@ function bestTeam(player1, player2) {
         
 
 }
+
+console.log(bestTeam("France", { name: "Germany", foul: 10, cardY: 1, cardR: 1 }));
+
